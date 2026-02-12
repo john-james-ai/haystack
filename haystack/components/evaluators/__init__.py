@@ -13,6 +13,7 @@ _import_structure = {
     "document_map": ["DocumentMAPEvaluator"],
     "document_mrr": ["DocumentMRREvaluator"],
     "document_ndcg": ["DocumentNDCGEvaluator"],
+    "document_precision": ["DocumentPrecisionEvaluator"],
     "document_recall": ["DocumentRecallEvaluator"],
     "faithfulness": ["FaithfulnessEvaluator"],
     "llm_evaluator": ["LLMEvaluator"],
@@ -25,6 +26,7 @@ if TYPE_CHECKING:
     from .document_map import DocumentMAPEvaluator as DocumentMAPEvaluator
     from .document_mrr import DocumentMRREvaluator as DocumentMRREvaluator
     from .document_ndcg import DocumentNDCGEvaluator as DocumentNDCGEvaluator
+    from .document_precision import DocumentPrecisionEvaluator as DocumentPrecisionEvaluator
     from .document_recall import DocumentRecallEvaluator as DocumentRecallEvaluator
     from .faithfulness import FaithfulnessEvaluator as FaithfulnessEvaluator
     from .llm_evaluator import LLMEvaluator as LLMEvaluator

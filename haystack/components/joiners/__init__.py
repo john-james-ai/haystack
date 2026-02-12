@@ -10,6 +10,7 @@ from lazy_imports import LazyImporter
 _import_structure = {
     "answer_joiner": ["AnswerJoiner"],
     "branch": ["BranchJoiner"],
+    "dat_document_joiner": ["DATDocumentJoiner"],
     "document_joiner": ["DocumentJoiner"],
     "list_joiner": ["ListJoiner"],
     "string_joiner": ["StringJoiner"],
@@ -18,6 +19,7 @@ _import_structure = {
 if TYPE_CHECKING:
     from .answer_joiner import AnswerJoiner as AnswerJoiner
     from .branch import BranchJoiner as BranchJoiner
+    from .dat_document_joiner import DATDocumentJoiner as DATDocumentJoiner
     from .document_joiner import DocumentJoiner as DocumentJoiner
     from .list_joiner import ListJoiner as ListJoiner
     from .string_joiner import StringJoiner as StringJoiner

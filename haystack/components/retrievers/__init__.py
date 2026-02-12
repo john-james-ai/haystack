@@ -10,7 +10,7 @@ from lazy_imports import LazyImporter
 _import_structure = {
     "auto_merging_retriever": ["AutoMergingRetriever"],
     "filter_retriever": ["FilterRetriever"],
-    "in_memory": ["InMemoryBM25Retriever", "InMemoryEmbeddingRetriever"],
+    "in_memory": ["InMemoryBM25Retriever", "InMemoryDATHybridRetriever", "InMemoryEmbeddingRetriever"],
     "multi_query_embedding_retriever": ["MultiQueryEmbeddingRetriever"],
     "multi_query_text_retriever": ["MultiQueryTextRetriever"],
     "sentence_window_retriever": ["SentenceWindowRetriever"],
@@ -20,6 +20,7 @@ if TYPE_CHECKING:
     from .auto_merging_retriever import AutoMergingRetriever as AutoMergingRetriever
     from .filter_retriever import FilterRetriever as FilterRetriever
     from .in_memory import InMemoryBM25Retriever as InMemoryBM25Retriever
+    from .in_memory import InMemoryDATHybridRetriever as InMemoryDATHybridRetriever
     from .in_memory import InMemoryEmbeddingRetriever as InMemoryEmbeddingRetriever
     from .multi_query_embedding_retriever import MultiQueryEmbeddingRetriever as MultiQueryEmbeddingRetriever
     from .multi_query_text_retriever import MultiQueryTextRetriever as MultiQueryTextRetriever
